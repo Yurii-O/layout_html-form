@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
-
+    <!-- <h1>HTML Form</h1> -->
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset class="group">
         <legend>
@@ -57,7 +56,7 @@
         </div>
 
         <div class="formField">
-          <label for="age">Full date of birth:</label>
+          <label for="date">Full date of birth:</label>
           <input
             type="date" 
             id="date" 
@@ -108,30 +107,28 @@
 
       <fieldset class="group">
         <legend>
-          An interesting facts about you!
+          An interesting fact about you!
         </legend>
 
         <div class="formField">
           Do you love cats?  
-          <label>Yes
-            <input
-              type="radio" 
-              id="loveCats" 
-              name="loveCats"
-              value="yes"
-            >  
-          </label>
-          <label>No
-            <input
-              type="radio" 
-              id="loveCats" 
-              name="loveCats"
-              value="no"
-            >  
-          </label>
+          <input
+            type="radio"
+            id="catsYes"
+            name="loveCats"
+            value="yes"
+          >
+          <label for="catsYes"></label>Yes</label>
+          <input
+            type="radio" 
+            id="catsNo"
+            name="loveCats"
+            value="no"
+          > 
+          <label for="catsNo">No</label>
         </div>
         <div class="formField">
-          <label for="color">What is your favorite colour:</label>
+          <label for="color">What is your favorite color:</label>
           <input
             type="color" 
             id="color" 
@@ -139,7 +136,7 @@
           >       
         </div>
         <div class="formField">
-          <label for="time">What time do you go to bad?</label>
+          <label for="time">What time do you go to bed?</label>
           <input
             type="time" 
             id="time" 
@@ -148,7 +145,12 @@
         </div>
         <div class="formField">
           <label for="cars">What are your favorite brand of cars?</label>
-          <select id="cars" name="cars" size="3" multiple>
+          <select 
+            id="cars"
+            name="cars"
+            size="4"
+            multiple
+          >
             <option value="volvo">Volvo</option>
             <option value="saab">BMW</option>
             <option value="fiat">Mersedes</option>
@@ -156,13 +158,14 @@
           </select>     
         </div>
         <div class="formField">
-          <label for="time">How do you rate our work?</label>
+          <label for="rate">How do you rate our work?</label>
           <input
             type="range" 
             id="rate" 
             name="rate"
             min="1"
             max="10"
+            value="1"
             required
           >       
         </div>
@@ -174,7 +177,12 @@
         </legend>
         <div class="formField">
           <label for="comments">Comments:</label>
-          <textarea name="comments" id="comments" cols="17" rows="2"></textarea>
+          <textarea
+            name="comments"
+            id="comments"
+            cols="17"
+            rows="2"
+         ></textarea>
         </div>
         <div class="formField">
           <label for="recommend">Would you recommended us?</label>
