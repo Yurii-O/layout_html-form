@@ -166,9 +166,26 @@
             required
           >       
         </div>
-
       </fieldset>
 
+      <fieldset class="group">
+        <legend>
+          Additional info:
+        </legend>
+        <div class="formField">
+          <label for="comments">Comments:</label>
+          <textarea name="comments" id="comments" cols="17" rows="2"></textarea>
+        </div>
+        <div class="formField">
+          <label for="recommend">Would you recommended us?</label>
+          <select id="recommend" name="recommend" required>
+            <option value="yes" selected>Yes</option>
+            <option value="no">No</option>
+          </select>     
+        </div>
+      </fieldset>
+
+      <button type="submit">Submit</button>
     </form>
 
     <script type="text/javascript" src="./main.js"></script>
